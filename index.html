@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TCC.CREATIVE STUDIOS | Cinematic Content &amp; Videography, Accra</title>
+<link rel="icon" type="image/png" href="assets/logo-01.png">
+<style>
+:root{--bg:#0b0b0d;--fg:#fff;--mut:#fff;--line:#2a2a2a;--card:#141417;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0}
+body{background:#0b0b0d;color:#fff;font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;background:rgba(11,11,13,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-size:1rem;white-space:nowrap;display:flex;align-items:center}.logo img{height:40px;width:auto;display:block}.flogo{height:46px;width:auto;display:block;margin:0 auto 16px}.logo span{font-style:italic;font-weight:400}
+nav ul{display:flex;gap:24px;list-style:none;padding:0;font-size:.88rem}
+nav ul a{position:relative}nav ul a:after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:#fff;transition:.3s}
+nav ul a:hover:after{width:100%}
+.btn{display:inline-block;padding:14px 30px;border:1px solid #f6efe0;border-radius:99px;font-weight:600;cursor:pointer;background:#f6efe0;color:#0b0b0d;transition:.25s;font-size:.95rem;text-align:center}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 0 rgba(255,255,255,.25)}
+.btn.ghost{background:transparent;color:#fff;border-color:#fff}.btn.ghost:hover{background:#f6efe0;color:#0b0b0d}
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 6vw;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 40%,#27272c 0,#0b0b0d 62%)}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid #333;border-radius:50%;animation:pulse 6s ease-in-out infinite}
+.hero:before{width:520px;height:520px}.hero:after{width:820px;height:820px;animation-delay:2s}
+@keyframes pulse{0%,100%{transform:scale(.92);opacity:.4}50%{transform:scale(1.05);opacity:1}}
+.hero>*{position:relative;z-index:1}
+.tag{letter-spacing:.35em;text-transform:uppercase;font-size:.75rem;color:var(--mut);margin-bottom:18px}
+.hero h1{font-size:clamp(1.2rem,5.2vw,5rem);line-height:1.05;white-space:nowrap;font-style:normal}.hero h1 em{font-weight:400}
+.hero p{max-width:580px;margin:22px auto 34px;color:#fff}
+.row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.marquee{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:14px 0;background:#f6efe0;color:#0b0b0d}
+.marquee div{display:inline-block;animation:slide 40s linear infinite;font-family:Georgia,serif;font-size:1.25rem;font-style:italic}
+@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:90px 5vw}
+.head{text-align:center;margin-bottom:50px}.head h2{font-size:clamp(2rem,5vw,3.4rem)}.head p{color:var(--mut);margin-top:8px}
+.light{background:#f6efe0;color:#141414}.light .head p{color:#555}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));max-width:1150px;margin:auto}
+.svc{padding:30px 26px;border:1px solid #dcd2bb;border-radius:18px;transition:.3s;background:#fcf8ee}
+.svc:hover{background:#0b0b0d;color:#f6efe0;transform:translateY(-8px) rotate(-1deg)}
+.svc .n{font-family:Georgia,serif;font-size:2.2rem;opacity:.35}.svc h3{font-size:1.2rem}
+.pkg{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px 26px;display:flex;flex-direction:column;transition:.3s}
+.pkg:hover{border-color:#fff;transform:translateY(-6px)}
+.pkg.star{background:#f6efe0;color:#0b0b0d}.pkg.star li{border-color:#ccc}
+.badge{align-self:flex-start;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid currentColor;border-radius:99px;padding:3px 12px;margin-bottom:12px}
+.pkg h3{font-size:1.3rem;letter-spacing:.04em}.price{font-family:Georgia,serif;font-size:2.4rem;margin:6px 0}
+.pkg ul{list-style:none;padding:0;margin:12px 0 24px;flex:1}
+.pkg li{padding:7px 0;border-bottom:1px solid var(--line);font-size:.9rem}.pkg li:before{content:"✦ ";font-size:.7rem}
+.pkg.star .btn{background:#0b0b0d;color:#f6efe0;border-color:#0b0b0d}
+.add{max-width:1150px;margin:50px auto 0;border:1px solid var(--line);border-radius:18px;padding:30px}
+.add h3{text-align:center;margin-bottom:18px;font-size:1.5rem}
+.add div{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:4px 40px}
+.add p{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.92rem}.add b{white-space:nowrap}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;max-width:1150px;margin:auto}
+.tile{aspect-ratio:3/4;border-radius:14px;display:flex;align-items:flex-end;padding:14px;font-family:Georgia,serif;font-style:italic;filter:grayscale(1);transition:.4s;background:linear-gradient(135deg,#333,#bbb)}
+.tile:nth-child(2n){background:linear-gradient(200deg,#111,#777)}.tile:nth-child(3n){background:linear-gradient(60deg,#888,#eee);color:#000}
+.tile:hover{transform:scale(1.05) rotate(1.5deg)}
+details{max-width:800px;margin:0 auto 10px;border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+details[open]{background:var(--card)}summary{cursor:pointer;font-weight:600}details p{color:#fff;margin-top:10px}
+.light details{border-color:#d9cfb8}.light details[open]{background:#efe6d0}.light details p{color:#444}
+.info{display:flex;gap:10px 28px;flex-wrap:wrap;justify-content:center;margin:0 auto 40px;max-width:900px;text-align:center}
+.info a{border-bottom:1px solid #000;font-weight:600}
+form{max-width:760px;margin:auto;display:grid;gap:14px;grid-template-columns:1fr 1fr}
+form .full{grid-column:1/-1}
+label{display:grid;gap:6px;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#555}
+input,select,textarea{font:inherit;padding:14px;border:1px solid #000;border-radius:12px;background:#fffaf0;color:#141414;width:100%}
+input:focus,select:focus,textarea:focus{outline:3px solid #000;outline-offset:2px}
+.agree{display:flex;gap:12px;align-items:flex-start;text-transform:none;letter-spacing:0;font-size:.95rem;color:#000;cursor:pointer}
+.agree input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:#000;padding:0}
+.agree a{text-decoration:underline;font-weight:700}
+.sent{display:none;max-width:760px;margin:20px auto 0;padding:18px;border:2px solid #000;border-radius:14px;text-align:center}
+.social{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.social a{border:1px solid #fff;border-radius:99px;padding:12px 24px;transition:.25s}.social a:hover{background:#f6efe0;color:#0b0b0d;transform:translateY(-3px)}
+footer{text-align:center;padding:40px 5vw;border-top:1px solid var(--line);color:var(--mut);font-size:.85rem}
+.rv{opacity:0;transform:translateY(30px);transition:.8s}.rv.in{opacity:1;transform:none}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;z-index:0}
+.gal{align-items:start;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.gal img,.gal video{width:100%;display:block;border-radius:14px;background:#111;object-fit:cover;transition:.4s}
+.gal img{aspect-ratio:4/5}.gal video{aspect-ratio:9/16}.gal img:hover{transform:scale(1.03) rotate(-1deg)}
+.chips{display:flex;gap:10px;justify-content:center;margin:-20px 0 30px;flex-wrap:wrap}
+.chips button{font:inherit;padding:10px 22px;border:1px solid #000;border-radius:99px;background:#f6efe0;color:#0b0b0d;cursor:pointer;transition:.2s}
+.chips button.on,.chips button:hover{background:#0b0b0d;color:#f6efe0}
+.gal figure{margin:0}.gal figcaption{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-top:8px;color:#444}
+.team{max-width:900px;margin:auto;display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.tm{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);transition:.3s}
+.tm:hover{border-color:#fff;transform:translateY(-6px)}
+.tm img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1);transition:.5s}
+.tm:hover img{filter:none}.tm div{padding:22px 24px 26px}.tm h3{font-size:1.35rem}
+.tm .role{display:inline-block;margin:8px 0 10px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid #fff;border-radius:99px;padding:3px 12px}
+.tm p{color:#fff;font-size:.93rem}
+#social{min-height:640px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-align:left;color:#fff;padding:90px 6vw;background:linear-gradient(90deg,rgba(11,11,13,.94) 0%,rgba(11,11,13,.7) 38%,rgba(11,11,13,.05) 70%),url(assets/photo-01.jpg) 70% 18% / cover no-repeat}
+#social .head{text-align:left;margin-bottom:28px}#social .social{justify-content:flex-start}
+#packages{position:relative;overflow:hidden}
+#packages .pbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:0}
+#packages:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(11,11,13,.5),rgba(11,11,13,.68));z-index:1}
+#packages>*:not(.pbg){position:relative;z-index:2}
+#pk{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;max-width:1150px;margin:auto}
+#pk .pkg{flex:0 1 calc((100% - 36px)/3);min-width:0}
+#packages .pkg{background:rgba(11,11,13,.58);backdrop-filter:blur(6px)}
+#packages .pkg.star{background:#f6efe0}
+#packages .add{background:rgba(11,11,13,.58);backdrop-filter:blur(6px)}
+@media(max-width:900px){#pk .pkg{flex-basis:calc(50% - 9px)}}
+@media(max-width:600px){#pk .pkg{flex-basis:100%}}
+@media(max-width:700px){#social{min-height:680px;justify-content:flex-end;align-items:center;text-align:center;padding:60px 6vw;background:linear-gradient(180deg,rgba(11,11,13,0) 25%,rgba(11,11,13,.92) 82%),url(assets/photo-01.jpg) 68% 0 / cover no-repeat}#social .head{text-align:center}#social .social{justify-content:center}}
+#social .social a{border-color:#fff;background:rgba(0,0,0,.35)}#social .social a:hover{background:#f6efe0;color:#0b0b0d}
+@media(max-width:700px){nav ul{display:none}form{grid-template-columns:1fr}section{padding:70px 6vw}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><a class="logo" href="#top" aria-label="TCC Creative Studios"><img src="assets/logo-02.png" alt="TCC Creative Studios"></a>
+<ul><li><a href="#services">Services</a></li><li><a href="#packages">Packages</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#team">Team</a></li><li><a href="#faq">FAQs</a></li><li><a href="#terms">Terms</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" href="#contact" style="padding:10px 22px">Book Us</a></nav>
+
+<header class="hero" id="top">
+<video class="bg" autoplay muted loop playsinline preload="auto" src="assets/video-01.mp4"></video>
+<p class="tag">Content Creation · Videography · Accra</p>
+<h1>TCC.CREATIVE STUDIOS</h1>
+<p>Cinematic content for your biggest moments. Weddings, traditional ceremonies, birthdays and events, told as films and reels you will replay forever.</p>
+<div class="row"><a class="btn" href="#contact">Book Your Date</a><a class="btn ghost" href="#packages">View Packages</a></div>
+</header>
+
+<div class="marquee"><div id="mq"></div></div>
+
+<section class="light" id="services">
+<div class="head rv"><h2>Our Services</h2><p>Every event is a story waiting to be told.</p></div>
+<div class="grid" id="svc"></div>
+</section>
+
+<section id="packages">
+<video class="pbg" autoplay muted loop playsinline preload="auto" src="assets/video-02.mp4"></video>
+<div class="head rv"><h2>Wedding Packages</h2><p>Prices in Ghana cedis (GH₵). Choose a package, then add what you need.</p></div>
+<div class="grid" id="pk"></div>
+<div class="add rv"><h3>Add-ons</h3><div id="ao"></div></div>
+</section>
+
+<section class="light" id="gallery">
+<div class="head rv"><h2>Moments We Love</h2><p>A taste of our work. Tap a reel to play.</p></div>
+<div class="chips"><button class="on" data-f="all">All</button><button data-f="w">Weddings</button><button data-f="e">Engagements</button><button data-f="p">Proposals</button><button data-f="g">Graduations</button></div>
+<div class="gal">
+<figure class="rv" data-c="w"><img loading="lazy" alt="Bride and groom in traditional Ghanaian wedding attire" src="assets/photo-02.jpg"><figcaption>Traditional Wedding</figcaption></figure>
+<figure class="rv" data-c="w"><video controls muted loop playsinline preload="none" poster="assets/photo-03.jpg" src="assets/video-03.mp4"></video><figcaption>Wedding Reel</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Couple seated in kente and gold jewellery" src="assets/photo-04.jpg"><figcaption>Traditional Wedding</figcaption></figure>
+<figure class="rv" data-c="w"><video controls muted loop playsinline preload="none" poster="assets/photo-05.jpg" src="assets/video-04.mp4"></video><figcaption>Wedding Reel</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Couple portrait in kente and gold" src="assets/photo-06.jpg"><figcaption>Traditional Wedding</figcaption></figure>
+<figure class="rv" data-c="w"><video controls muted loop playsinline preload="none" poster="assets/photo-07.jpg" src="assets/video-05.mp4"></video><figcaption>Wedding Reel</figcaption></figure>
+<figure class="rv" data-c="g"><video controls muted loop playsinline preload="none" poster="assets/photo-08.jpg" src="assets/video-06.mp4"></video><figcaption>Graduation Shoot · Behind the Scenes</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Invitation &amp; Details" src="assets/photo-09.jpg"><figcaption>Invitation &amp; Details</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Wedding details: rings, shoes, perfume and invitation" src="assets/photo-10.jpg"><figcaption>The Details</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="The Prep" src="assets/photo-11.jpg"><figcaption>The Prep</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="The Groom's Prep" src="assets/photo-12.jpg"><figcaption>The Groom's Prep</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="The Groom" src="assets/photo-13.jpg"><figcaption>The Groom</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="The Bride" src="assets/photo-14.jpg"><figcaption>The Bride</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="The Prayer" src="assets/photo-15.jpg"><figcaption>The Prayer</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="The Bouquet" src="assets/photo-16.jpg"><figcaption>The Bouquet</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Groom &amp; Bride" src="assets/photo-17.jpg"><figcaption>Groom &amp; Bride</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Bride &amp; Groom" src="assets/photo-18.jpg"><figcaption>Bride &amp; Groom</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Couple Portrait" src="assets/photo-19.jpg"><figcaption>Couple Portrait</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Wedding Portrait" src="assets/photo-20.jpg"><figcaption>Wedding Portrait</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Wedding Details" src="assets/photo-21.jpg"><figcaption>Wedding Details</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Bridal Portraits" src="assets/photo-22.jpg"><figcaption>Bridal Portraits</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Wedding Details" src="assets/photo-23.jpg"><figcaption>Wedding Details</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="The Moments" src="assets/photo-24.jpg"><figcaption>The Moments</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Bride's Mother" src="assets/photo-25.jpg"><figcaption>Bride's Mother</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="The Ceremony" src="assets/photo-26.jpg"><figcaption>The Ceremony</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Wedding Moment" src="assets/photo-27.jpg"><figcaption>Wedding Moment</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Bridal Portrait" src="assets/photo-28.jpg"><figcaption>Bridal Portrait</figcaption></figure>
+<figure class="rv" data-c="w"><img loading="lazy" alt="Bride &amp; Groom" src="assets/photo-29.jpg"><figcaption>Bride &amp; Groom</figcaption></figure>
+<figure class="rv" data-c="p"><img loading="lazy" alt="Proposal Details" src="assets/photo-30.jpg"><figcaption>Proposal Details</figcaption></figure>
+<figure class="rv" data-c="p"><img loading="lazy" alt="Proposal Moment" src="assets/photo-31.jpg"><figcaption>Proposal Moment</figcaption></figure>
+<figure class="rv" data-c="p"><img loading="lazy" alt="Proposal" src="assets/photo-32.jpg"><figcaption>Proposal</figcaption></figure>
+<figure class="rv" data-c="p"><img loading="lazy" alt="Proposal" src="assets/photo-33.jpg"><figcaption>Proposal</figcaption></figure>
+<figure class="rv" data-c="e"><video controls muted loop playsinline preload="none" poster="assets/photo-34.jpg" src="assets/video-07.mp4"></video><figcaption>Traditional Engagement</figcaption></figure>
+</div>
+</section>
+
+<section id="team">
+<div class="head rv"><h2>Meet The Team</h2><p>The creatives behind every frame.</p></div>
+<div class="team">
+<div class="tm rv"><img loading="lazy" alt="Julian Nii Adjetey King" src="assets/photo-35.jpg"><div><h3>Julian Nii Adjetey King</h3><span class="role">Team Lead &amp; Creative Director</span><p>Leads the team and shapes the creative vision behind every project, from first idea to final film.</p></div></div>
+<div class="tm rv"><img loading="lazy" alt="Samuel Nii Sowah" src="assets/photo-36.jpg"><div><h3>Samuel Nii Sowah</h3><span class="role">Director of Photography</span><p>Leads the visual storytelling, from framing and lighting to the cinematic look of every shot.</p></div></div>
+</div>
+</section>
+
+<section id="faq">
+<div class="head rv"><h2>FAQs</h2></div>
+<details><summary>How do I book?</summary><p>Send a booking request using the form below. A date is only booked once the 50% non-refundable booking fee is paid and we confirm.</p></details>
+<details><summary>When is the balance due?</summary><p>5 to 7 working days before the event, or on the event date before coverage begins.</p></details>
+<details><summary>Do packages include raw footage?</summary><p>Not automatically. Raw footage and raw vertical content are add-ons at GH₵500 each.</p></details>
+<details><summary>Do you travel outside Accra?</summary><p>Yes. Travel is quoted based on location and may include transport and accommodation.</p></details>
+</section>
+
+<section class="light" id="contact">
+<div class="head rv"><h2>Book The Team</h2><p>Share your details and event location and we will get back to you.</p></div>
+<div class="info"><a href="https://wa.me/233257677987">WhatsApp 0257677987</a><a href="tel:0257677987">0257677987</a><a href="tel:0556136378">0556136378</a><a href="mailto:tcccreativestudios9@gmail.com">tcccreativestudios9@gmail.com</a><span>Accra, Ghana</span></div>
+<form id="f">
+<label>Full name<input name="name" required></label>
+<label>Phone number<input name="phone" type="tel" required></label>
+<label>Email<input name="email" type="email" required></label>
+<label>Service<select name="type" id="type"></select></label>
+<label>Package<select name="pkg" id="pkgsel"></select></label>
+<label>Event date<input name="date" type="date"></label>
+<label class="full">Event location<input name="place" required placeholder="Town, venue"></label>
+<label class="full">Anything else?<textarea name="note" rows="3"></textarea></label>
+<label class="agree full"><input type="checkbox" id="agree" name="agree" required><span>I have read and agree to the TCC.CREATIVESTUDIOS <a href="#terms">Booking Terms &amp; Conditions</a>.</span></label>
+<button class="btn full" style="background:#0b0b0d;color:#f6efe0" type="submit">Send Booking Request</button>
+</form>
+<div class="sent" id="sent">Thank you! Your request is ready. Complete sending in the WhatsApp window that just opened.</div>
+</section>
+
+<section id="terms">
+<div class="head rv"><h2>Booking Terms &amp; Conditions</h2><p>TCC.CREATIVESTUDIOS</p></div>
+<div id="tl"></div>
+</section>
+
+<section id="social">
+<div class="head rv"><h2>Follow The Culture</h2></div>
+<div class="social"><a href="https://www.instagram.com/tcc.creativestudioss?stkn=cWNweHMxOHI2d3Q3&amp;utm_source=qr" target="_blank" rel="noopener">Instagram @tcc.creativestudioss</a><a href="https://www.tiktok.com/@tcc.creativestudioss?_r=1&amp;_t=ZS-9AMkBtryYse" target="_blank" rel="noopener">TikTok @tcc.creativestudioss</a></div>
+</section>
+
+<footer><img class="flogo" src="assets/logo-02.png" alt="TCC Creative Studios">© <span id="y"></span> TCC.CREATIVE STUDIOS · Accra, Ghana · All rights reserved.</footer>
+
+<script>
+var S=["Wedding Content Creation","Traditional/Engagement Wedding Content","Pre-Wedding Content","Proposal Content","Bridal Shower Content","Birthday & Private Event Content","Corporate Event Content","Cinematic Videography","Creative Direction","Social Media/Event Reels","Same-Day Event Content"];
+var P=[["THE ESSENTIAL","3,000","Up to 5 hours|3 edited reels|Bridal prep|Couple content|Ceremony highlights|Reception highlights|5–7 day delivery"],
+["THE SIGNATURE","4,000","Up to 7 hours|5 edited reels|Bridal & groom prep|Couple portraits|Ceremony & reception|Detail shots|1 cinematic wedding recap|5–7 day delivery","Most Popular"],
+["THE LUXURY","5,500","Up to 10 hours|8 edited reels|Bridal & groom prep|First look|Couple portraits|Ceremony & reception|Guest/family moments|Cinematic wedding film|Priority delivery"],
+["THE COMPLETE EXPERIENCE","7,500","Full-day coverage|10 edited reels|Cinematic wedding film|Bridal & groom prep|First look & couple portraits|Full ceremony & reception|Guest/family moments|Same-day social content|Additional shooter"],
+["TRADITIONAL + WEDDING + RECEPTION","8,000","Traditional/engagement + white wedding + reception|Bridal & groom prep|Couple portraits|Guest/family moments|10 edited reels|Cinematic wedding film|BTS content|Priority delivery"]];
+var A=[["Extra hour","300"],["Additional reel","250"],["Same-day edit","500"],["Additional shooter","800"],["Pre-wedding content session","1,500"],["Raw vertical content","500"],["Raw footage","500"],["Travel outside Accra","Quoted by location"]];
+var T=[["Booking & Date Reservation","All bookings begin as a booking request and are subject to availability. A date is only considered officially booked once the required booking fee has been paid and confirmation has been issued by TCC.CREATIVESTUDIOS."],
+["Booking Fee","A 50% non-refundable booking fee is required to secure your date. The remaining balance must be paid 5-7 working days before or on the event date, prior to coverage."],
+["Availability","Submitting a booking request does not guarantee availability. TCC.CREATIVESTUDIOS will review the request and confirm whether the requested date and service are available."],
+["Cancellation & Rescheduling","The booking fee is non-refundable once a date has been secured. Rescheduling may be considered depending on availability and should be communicated as early as possible."],
+["Coverage Time","Coverage begins and ends according to the agreed package and scheduled hours. Additional hours requested on the day will attract the applicable overtime fee."],
+["Location & Travel","Bookings within Accra are covered according to the agreed package. Travel outside Accra may attract an additional transportation/travel fee and accommodation, depending on the location."],
+["Client Preparation","Clients are encouraged to provide accurate event schedules, locations and important details ahead of the event to allow proper planning and coverage."],
+["Deliverables","Final content will be delivered according to the selected package and agreed delivery timeline. Delivery timelines may vary depending on the package and workload."],
+["Raw Footage","Raw footage is not automatically included in packages unless specifically stated. It may be requested as an additional service at the applicable rate."],
+["Additional Content","Additional reels, extra coverage hours, additional shooters, same-day edits and other requested services are charged separately according to the current rate card."],
+["Creative Direction","TCC.CREATIVESTUDIOS reserves creative discretion in capturing and editing content while taking the client’s preferred style and vision into consideration."],
+["Event Changes","Any major changes to the event date, location, schedule or selected package should be communicated as early as possible and may affect the final price or availability."],
+["Delivery","Final edited content will be delivered digitally through the agreed delivery method. Clients are responsible for downloading and safely storing their delivered files."],
+["Force Majeure","In the unlikely event that circumstances beyond the control of TCC.CREATIVESTUDIOS prevent coverage, reasonable efforts will be made to provide an alternative solution or suitable replacement where possible."],
+["Confirmation","By proceeding with a booking and paying the booking fee, the client confirms that they have read, understood and agreed to these terms and conditions."]];
+var $=function(i){return document.getElementById(i)};
+$("mq").textContent=S.concat(S).join(" ✦ ")+" ✦ ";
+$("svc").innerHTML=S.map(function(s,i){return '<div class="svc rv"><div class="n">'+(i<9?"0":"")+(i+1)+'</div><h3>'+s.replace("&","&amp;")+'</h3></div>'}).join("");
+$("pk").innerHTML=P.map(function(p,i){return '<div class="pkg rv'+(p[3]?' star':'')+'">'+(p[3]?'<span class="badge">'+p[3]+'</span>':'')+'<h3>'+p[0]+'</h3><div class="price">GH₵'+p[1]+'</div><ul>'+p[2].split("|").map(function(x){return "<li>"+x.replace("&","&amp;")+"</li>"}).join("")+'</ul><a class="btn" href="#contact" data-i="'+i+'">Book this</a></div>'}).join("");
+$("ao").innerHTML=A.map(function(a){return "<p><span>"+a[0]+"</span><b>"+(isNaN(a[1][0])?a[1]:"GH₵"+a[1])+"</b></p>"}).join("");
+$("tl").innerHTML=T.map(function(t,i){return "<details><summary>"+(i+1)+". "+t[0].replace("&","&amp;")+"</summary><p>"+t[1]+"</p></details>"}).join("");
+$("type").innerHTML=S.map(function(s){return "<option>"+s.replace("&","&amp;")+"</option>"}).join("");
+$("pkgsel").innerHTML="<option>Not sure yet / custom</option>"+P.map(function(p){return "<option>"+p[0]+" (GH₵"+p[1]+")</option>"}).join("");
+document.querySelectorAll("[data-i]").forEach(function(a){a.addEventListener("click",function(){var p=P[a.dataset.i];$("pkgsel").value=p[0]+" (GH₵"+p[1]+")";$("type").value=S[0]})});
+$("y").textContent=new Date().getFullYear();
+$("f").addEventListener("submit",function(e){
+ e.preventDefault();if(!$("agree").checked){$("agree").focus();return}var d=new FormData(e.target);
+ var m="New booking request - TCC.CREATIVESTUDIOS\nName: "+d.get("name")+"\nPhone: "+d.get("phone")+"\nEmail: "+d.get("email")+"\nService: "+d.get("type")+"\nPackage: "+d.get("pkg")+"\nDate: "+(d.get("date")||"TBC")+"\nLocation: "+d.get("place")+"\nNotes: "+(d.get("note")||"-")+"\nAgreed to Booking Terms & Conditions: Yes";
+ window.open("https://wa.me/233257677987?text="+encodeURIComponent(m),"_blank");$("sent").style.display="block"});
+document.querySelectorAll(".chips button").forEach(function(b){b.addEventListener("click",function(){document.querySelectorAll(".chips button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");document.querySelectorAll(".gal figure").forEach(function(g){var show=b.dataset.f==="all"||g.dataset.c===b.dataset.f;g.style.display=show?"":"none";if(!show){var v=g.querySelector("video");if(v)v.pause()}})})});
+var gv=document.querySelectorAll(".gal video");gv.forEach(function(v){v.muted=true});
+if(!matchMedia("(prefers-reduced-motion:reduce)").matches){var vo=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){})}else{v.pause()}})},{threshold:.4});gv.forEach(function(v){vo.observe(v)})}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.1});
+if(matchMedia("(prefers-reduced-motion:reduce)").matches){document.querySelectorAll(".hero .bg,.pbg").forEach(function(hv){hv.removeAttribute("autoplay");hv.pause()})}
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>

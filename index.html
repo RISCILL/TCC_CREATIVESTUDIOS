@@ -87,9 +87,10 @@ footer{text-align:center;padding:40px 5vw;border-top:1px solid var(--line);color
 .tm:hover img{filter:none}.tm div{padding:22px 24px 26px}.tm h3{font-size:1.35rem}
 .tm .role{display:inline-block;margin:8px 0 10px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid #fff;border-radius:99px;padding:3px 12px}
 .tm p{color:#fff;font-size:.93rem}
-#social{min-height:500px;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;text-align:left;color:#fff;padding:60px 6vw;background-image:url('photo-01.jpg');background-size:contain;background-position:right center;background-attachment:scroll;background-repeat:no-repeat;position:relative}
+#social{min-height:520px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;text-align:left;color:#fff;padding:60px 6vw 30px;background-image:url('photo-01.jpg');background-size:contain;background-position:center center;background-repeat:no-repeat;background-color:#17191b;position:relative}
 #social>*{position:relative;z-index:2}
-#social .head{text-align:left;margin-bottom:28px}
+#social .head{text-align:center;margin-bottom:28px;color:#fff}
+#social .social{justify-content:center;width:100%}
 #packages{position:relative;overflow:hidden}
 #packages .pbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:0}
 #packages:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(11,11,13,.5),rgba(11,11,13,.68));z-index:1}
@@ -101,9 +102,7 @@ footer{text-align:center;padding:40px 5vw;border-top:1px solid var(--line);color
 #packages .add{background:rgba(11,11,13,.58);backdrop-filter:blur(6px)}
 @media(max-width:900px){#pk .pkg{flex-basis:calc(50% - 9px)}}
 @media(max-width:600px){#pk .pkg{flex-basis:100%}}
-@media(max-width:700px){#social{min-height:400px;justify-content:flex-end;align-items:center;text-align:center;padding:40px 6vw;background-size:cover;background-position:center}
-#social .head{text-align:center;margin-bottom:28px}
-#social .social{justify-content:center}}
+@media(max-width:700px){#social{min-height:420px;padding:40px 6vw 30px;background-size:cover;background-position:center}} 
 @media(max-width:700px){nav ul{display:none}form{grid-template-columns:1fr}section{padding:70px 6vw}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
@@ -223,7 +222,7 @@ footer{text-align:center;padding:40px 5vw;border-top:1px solid var(--line);color
 
 <script>
 var S=["Wedding Content Creation","Traditional/Engagement Wedding Content","Pre-Wedding Content","Proposal Content","Bridal Shower Content","Birthday & Private Event Content","Corporate Event Coverage"];
-var P=[["THE ESSENTIAL","3,000","Up to 5 hours|3 edited reels|Bridal prep|Couple content|Ceremony highlights|Reception highlights|5–7 day delivery"],["THE SIGNATURE","4,000","Up to 7 hours|5 edited reels|All of The Essential, plus|Same-day edit|Drone footage|Cinematic color grading|5–7 day delivery"],["THE PREMIUM","5,500","Up to 9 hours|7 edited reels|All of The Signature, plus|Multiple shooters|Ring bearer & flower girl moments|Father-daughter & mother-son dances|5–7 day delivery","MOST POPULAR"]];
+var P=[["THE ESSENTIAL","3,000","Up to 5 hours|3 edited reels|Bridal prep|Couple content|Ceremony highlights|Reception highlights|5–7 day delivery"],["THE SIGNATURE","4,000","Up to 7 hours|5 edited reels|All of The Essential, plus|Same-day edit|Drone footage|Cinematic color grading|5–7 day delivery"],["THE PREMIUM","5,500","Up to 9 hours|7 edited reels|All of The Signature, plus|Multiple shooters|Ring bearer & flower girl moments|Father-daughter & mother-son dances|5–7 day delivery","MOST POPULAR"],["TRADITIONAL + WEDDING + RECEPTION","8,000","Traditional/engagement coverage + white wedding + reception|Bridal & groom prep|Couple portraits|Guest/family moments|10 edited reels|Cinematic wedding film|BTS content|Priority delivery"],["THE LUXURY","5,500","Up to 10 hours|8 edited reels|Bridal & groom prep|First look|Couple portraits|Ceremony & reception|Guest/family moments|Cinematic wedding film|Priority delivery"],["THE COMPLETE EXPERIENCE","7,500","Full-day coverage|10 edited reels|Cinematic wedding film|Bridal & groom prep|First look & couple portraits|Full ceremony & reception|Guest/family moments|Same-day social content|Additional shooter"]];
 var A=[["Extra hour","300"],["Additional reel","250"],["Same-day edit","500"],["Additional shooter","800"],["Pre-wedding content session","1,500"],["Raw vertical content","500"],["Raw footage","500"]];
 var T=[["Booking & Date Reservation","All bookings begin as a booking request and are subject to availability. A date is only considered officially booked once the required booking fee has been paid and confirmed by the team."],["Payment Terms","A 50% non-refundable booking fee is required to secure your date. The remaining 50% balance is due 5–7 working days before your event, or on the event date before coverage begins."],["Cancellation Policy","Bookings cancelled more than 60 days before the event date are eligible for a full refund minus a GH₵200 cancellation fee. Cancellations within 60 days of the event are non-refundable."],["Delivery & Usage Rights","All edited content is delivered within 5–7 working days. You receive a non-exclusive license to use the content for personal and professional purposes. TCC.CREATIVESTUDIOS retains the right to use the content for portfolio and promotional purposes."],["Rescheduling","If you need to reschedule your event, notify the team as early as possible. Rescheduling is subject to availability and must occur within 12 months of your original event date."],["Force Majeure","In the event of circumstances beyond reasonable control (natural disasters, severe weather, pandemics, civil unrest), the team will make every effort to reschedule. If rescheduling is impossible, a full refund of remaining balance will be issued."]];
 var $=function(i){return document.getElementById(i)};

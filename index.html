@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>TCC.CREATIVE STUDIOS | Cinematic Content & Videography, Accra</title>
+<title>TCC.CREATIVE STUDIOS | Cinematic Content &amp; Videography, Accra</title>
 <link rel="icon" type="image/png" href="logo-01.png">
 <style>
 :root{--bg:#0b0b0d;--fg:#fff;--mut:#fff;--line:#2a2a2a;--card:#141417;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -87,8 +87,11 @@ footer{text-align:center;padding:40px 5vw;border-top:1px solid var(--line);color
 .tm:hover img{filter:none}.tm div{padding:22px 24px 26px}.tm h3{font-size:1.35rem}
 .tm .role{display:inline-block;margin:8px 0 10px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid #fff;border-radius:99px;padding:3px 12px}
 .tm p{color:#fff;font-size:.93rem}
-#social{min-height:640px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-align:left;color:#fff;padding:90px 6vw;background:linear-gradient(90deg,rgba(11,11,13,.88),rgba(11,11,13,.68)),url('photo-01.jpg');background-size:cover;background-position:center;background-attachment:fixed}
-#social .head{text-align:left;margin-bottom:28px}#social .social{justify-content:flex-start}
+#social{min-height:640px;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;text-align:left;color:#fff;padding:90px 6vw;background-image:url('photo-01.jpg');background-size:cover;background-position:center;background-attachment:fixed;background-repeat:no-repeat;position:relative}
+#social:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,13,.2) 0%,rgba(11,11,13,.1) 50%,rgba(11,11,13,.5) 100%);z-index:1;pointer-events:none}
+#social>*{position:relative;z-index:2}
+#social .head{text-align:left;margin-bottom:28px}
+#social .social{justify-content:flex-start}
 #packages{position:relative;overflow:hidden}
 #packages .pbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:0}
 #packages:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(11,11,13,.5),rgba(11,11,13,.68));z-index:1}
@@ -100,8 +103,9 @@ footer{text-align:center;padding:40px 5vw;border-top:1px solid var(--line);color
 #packages .add{background:rgba(11,11,13,.58);backdrop-filter:blur(6px)}
 @media(max-width:900px){#pk .pkg{flex-basis:calc(50% - 9px)}}
 @media(max-width:600px){#pk .pkg{flex-basis:100%}}
-@media(max-width:700px){#social{min-height:680px;justify-content:flex-end;align-items:center;text-align:center;padding:60px 6vw;background:linear-gradient(180deg,rgba(11,11,13,0) 25%,rgba(11,11,13,.92) 95%),url('photo-01.jpg');background-size:cover;background-position:center}
+@media(max-width:700px){#social{min-height:680px;justify-content:flex-end;align-items:center;text-align:center;padding:60px 6vw}
 #social .head{text-align:center;margin-bottom:28px}
+#social .social{justify-content:center}
 #social .social a{border-color:#fff;background:rgba(0,0,0,.35)}#social .social a:hover{background:#f6efe0;color:#0b0b0d}}
 @media(max-width:700px){nav ul{display:none}form{grid-template-columns:1fr}section{padding:70px 6vw}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
